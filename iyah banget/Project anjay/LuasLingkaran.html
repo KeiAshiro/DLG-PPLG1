@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Menghitung Luas Lingkaran</h1>
+    <h1 id="gabut" >output</h1>
+    <label for="test">Input jari-jari Lingkaran: </label>
+    <input name="test" type="number" id="test"  value="" onsubmit="submitMe(document.getElementById('test').value)"/>
+    <br/>
+    <button onclick="submitMe(document.getElementById('test').value)" id="testButton" >Submit</button>
+    
+    <script>
+        var Kocak = "K";
+        
+
+            function submitMe(input) {
+                var R = document.getElementById('test').value;
+                var L = 3.14 * R * R;
+                document.getElementById('gabut').innerHTML = "Luas Lingkaran Tersebut Adalah: " + L + "cm";
+        }
+    </script>
+
+    <br><br>
+    <form action="GanjilGenap.html">
+        <input type="submit" value="Menentukan Ganjil Genap" />
+    </form>
+
+</body>
+</html>

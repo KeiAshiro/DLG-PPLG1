@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Menentukan Ganjil Genap suatu angka</h1>
+    <h1 id="gabut" >output</h1>
+<label for="test">Input: </label>
+<input name="test" type="number" id="test"  value="" onsubmit="submitMe(document.getElementById('test').value)"/>
+<br/>
+<button onclick="submitMe(document.getElementById('test').value)" id="testButton" >Submit</button>
+
+<script>
+        function submitMe(input) {
+            var value = document.getElementById('test').value;
+            if (value % 2 == 0) {
+                document.getElementById('gabut').innerHTML = value + " Adalah Genap";
+            } else {
+                document.getElementById('gabut').innerHTML = value + " Adalah Ganjil";
+            }
+    }
+</script>
+
+<br><br>
+<form action="KelilingPersegi.html">
+    <input type="submit" value="Mencari Keliling Persegi" />
+</form>
+</body>
+</html>
