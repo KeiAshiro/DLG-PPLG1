@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+          <th>Nama</th><th>Kelas</th><th>Jurusan</th><th>MTK</th><th>DLG</th><th>IPASS</th>
+          
+        </tr>
+        <tr>
+          <td id="namaewa"></td>
+          <td id="kelass"></td>
+          <td id="jurusann"></td>
+          <td id="MTKT"></td>
+          <td id="DLGF"></td>
+          <td id="IPASS"></td>
+        </tr>
+  
+      </table>
+    <script>
+        var Siswa = {
+        Nama: "Hermansyah Fitra",
+        Kelas: 10, 
+        Jurusan: "PPLG 1", 
+        Nilai: {
+          MTK: 77,
+          DLG: 96,
+          IPAS: 79
+        }
+    };
+        // document.write(" Laptop : A SUS ER O GI <br>");
+        // document.write("Prosesor: "+laptop["Prosesor"]+"<br>");
+        // document.write("GPU: "+laptop["GPU"]+"<br>");
+        // document.write("PSU: "+laptop["PSU"]+"<br>");
+        // document.write("OS: "+laptop["OS"]+"<br>");
+        // document.write("RAM: "+laptop["RAM"]+"<br>");
+        document.getElementById('namaewa').innerHTML = Siswa.Nama;
+        document.getElementById('kelass').innerHTML = Siswa.Kelas;
+        document.getElementById('jurusann').innerHTML = Siswa.Jurusan;
+        document.getElementById('MTKT').innerHTML = Siswa.Nilai.MTK;
+        document.getElementById('DLGF').innerHTML = Siswa.Nilai.DLG;
+        document.getElementById('IPASS').innerHTML = Siswa.Nilai.IPAS;
+    </script>
+</body>
+</html>
