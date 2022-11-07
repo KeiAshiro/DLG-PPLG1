@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main(p1,p2) {
+            switch (p1) {
+                case "batu":
+                    if (p2 == "kertas") {
+                        document.write("P1 Kalah");
+                    } else if (p2 == "batu") {
+                        document.write("Seri");
+                    }else{
+                        document.write("P1 Menang");
+                    }
+                    break;
+                case "gunting":
+                if (p2 == "batu") {
+                        document.write("P1 Kalah");
+                    } else if (p2 == "gunting") {
+                        document.write("Seri");
+                    }else{
+                        document.write("P1 Menang");
+                    }
+                    break;
+                case "kertas":
+                if (p2 == "gunting") {
+                        document.write("P1 Kalah");
+                    }else if (p2 == "kertas") {
+                        document.write("Seri");
+                    }else{
+                        document.write("P1 Menang");
+                    }
+                    
+                    break;
+                default:
+                    break;
+            }
+        }
+        main("batu","kertas")
+    </script>
+</body>
+</html>
